@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympus Fitness Gym | Supera tus límites</title>
+    
+    <!-- Google Fonts & FontAwesome (Iconos) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo"><i class="fa-solid fa-dumbbell"></i> OLYMPUS <span>FITNESS</span></a>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#planes">Planes</a></li>
+                <li><a href="#contacto" class="btn-nav">Prueba Gratis</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>NO HAY EXCUSAS, SOLO <span>RESULTADOS</span></h1>
+            <p>Entrena en el gimnasio más completo de la ciudad. Equipamiento de primer nivel y entrenadores certificados.</p>
+            <div class="hero-buttons">
+                <a href="#planes" class="btn btn-primary">Ver Planes</a>
+                <a href="#contacto" class="btn btn-secondary">Clase de Prueba</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios / Beneficios -->
+    <section id="servicios" class="services">
+        <h2 class="section-title">¿POR QUÉ <span>ELEGIRNOS?</span></h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <h3>Zona Máquinas & Cardio</h3>
+                <p>Maquinaria moderna para musculación, zona de pesos libres y área cardiovascular completa.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-users"></i>
+                <h3>Clases Grupales</h3>
+                <p>Spinning, HIIT, Yoga, Zumba y CrossFit guiados por instructores profesionales.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-user-ninja"></i>
+                <h3>Personal Trainer</h3>
+                <p>Planes de entrenamiento y nutrición personalizados según tus objetivos reales.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planes / Tarifas -->
+    <section id="planes" class="plans">
+        <h2 class="section-title">NUESTROS <span>PLANES</span></h2>
+        <div class="plans-grid">
+            
+            <div class="plan-card">
+                <h3>PLAN BÁSICO</h3>
+                <div class="price">$25.000 <span>/ mes</span></div>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Acceso a sala de máquinas</li>
+                    <li><i class="fa-solid fa-check"></i> Horario de 08:00 a 17:00</li>
+                    <li><i class="fa-solid fa-check"></i> Evaluación inicial básica</li>
+                    <li class="disabled"><i class="fa-solid fa-xmark"></i> Clases grupales</li>
+                </ul>
+                <a href="#contacto" class="btn btn-card">Comenzar Ahora</a>
+            </div>
+
+            <div class="plan-card popular">
+                <span class="badge">Más Popular</span>
+                <h3>PLAN VIP</h3>
+                <div class="price">$38.000 <span>/ mes</span></div>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Acceso libre ilimitado 24/7</li>
+                    <li><i class="fa-solid fa-check"></i> Todas las clases grupales</li>
+                    <li><i class="fa-solid fa-check"></i> Plan nutricional básico</li>
+                    <li><i class="fa-solid fa-check"></i> Pase para 1 invitado al mes</li>
+                </ul>
+                <a href="#contacto" class="btn btn-primary">Comenzar Ahora</a>
+            </div>
+
+            <div class="plan-card">
+                <h3>PLAN ANUAL</h3>
+                <div class="price">$320.000 <span>/ año</span></div>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Todos los beneficios VIP</li>
+                    <li><i class="fa-solid fa-check"></i> Ahorras 2 meses gratis</li>
+                    <li><i class="fa-solid fa-check"></i> Polera de regalo Titan</li>
+                    <li><i class="fa-solid fa-check"></i> Congelamiento de plan (30 días)</li>
+                </ul>
+                <a href="#contacto" class="btn btn-card">Comenzar Ahora</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contacto / Formulario de Captación -->
+    <section id="contacto" class="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>¿LISTO PARA <span>EMPEZAR?</span></h2>
+                <p>Déjanos tus datos para agendar tu **clase de prueba 100% gratuita**.</p>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Av. Principal #1234, Ciudad</li>
+                    <li><i class="fa-solid fa-phone"></i> +56 9 8765 4321</li>
+                    <li><i class="fa-solid fa-clock"></i> Lunes a Viernes: 06:00 - 23:00</li>
+                </ul>
+            </div>
+
+            <form id="form-gym" class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Tu Nombre Completo" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Tu Correo Electrónico" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="" disabled selected>Selecciona Plan de Interés</option>
+                        <option value="basico">Plan Básico</option>
+                        <option value="vip">Plan VIP</option>
+                        <option value="anual">Plan Anual</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Solicitar Clase Gratis</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Olympus Fitness Gym. Desarrollado por <strong>OlympusDev</strong>.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
