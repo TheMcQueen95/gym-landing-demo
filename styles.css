@@ -378,7 +378,29 @@ section {
         display: block;
         font-size: 1.1rem;
     }
+    /* Compensar la altura del navbar fijo para que el contenido no quede tapado */
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        padding-top: 90px; /* Deja espacio suficiente debajo de la barra superior */
+        padding-bottom: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
+    /* Reducir el tamaño de letra del título principal en móviles */
+    .hero-content h1 {
+        font-size: 1.8rem; /* Tamaño proporcional para teléfonos */
+        line-height: 1.3;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
     .btn-nav {
         text-align: center;
         width: 100%;
