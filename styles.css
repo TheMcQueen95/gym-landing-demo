@@ -382,7 +382,7 @@ section {
     .hero {
         height: auto;
         min-height: 100vh;
-        padding-top: 90px; /* Deja espacio suficiente debajo de la barra superior */
+        padding-top: 65px; /* Deja espacio suficiente debajo de la barra superior */
         padding-bottom: 3rem;
         display: flex;
         align-items: center;
@@ -393,7 +393,7 @@ section {
     .hero-content h1 {
         font-size: 1.8rem; /* Tamaño proporcional para teléfonos */
         line-height: 1.3;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         margin-bottom: 1rem;
     }
 
@@ -406,7 +406,41 @@ section {
         width: 100%;
         margin-top: 1rem;
     }
+    /* Ajustes para la sección de Servicios y sus Tarjetas */
+    .services {
+        padding: 2.5rem 1rem; /* Margen respirable exterior */
+    }
 
+    .services-grid {
+        gap: 1.5rem;
+        padding: 0 0.25rem; /* Margen lateral para que los bordes no toquen la orilla */
+    }
+
+    .service-card {
+        padding: 1.8rem 1.25rem; /* Reduce el padding interno en móviles */
+        width: 100%;
+        box-sizing: border-box; /* Mantiene bordes e interior dentro del contenedor */
+    }
+/* Ajuste de la sección de Planes y Tarjetas */
+    .plans {
+        padding: 2.5rem 1rem; /* Asegura un margen respirable alrededor de las tarjetas */
+    }
+
+    .plans-grid {
+        gap: 1.5rem;
+        padding: 0 0.25rem; /* Evita que los bordes tocarán la orilla de la pantalla */
+    }
+
+    .plan-card {
+        padding: 2rem 1.25rem; /* Reduce el relleno interno de la tarjeta en móviles */
+        width: 100%;
+        box-sizing: border-box; /* Mantiene bordes e interior dentro del ancho */
+    }
+
+    /* Ajuste para que la tarjeta VIP no se escale de más en móviles */
+    .plan-card.popular {
+        transform: scale(1);
+    }
     /* Ajustes generales de secciones para evitar desbordes */
     section {
         padding: 2rem 0.1rem;
